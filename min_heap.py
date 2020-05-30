@@ -3,8 +3,6 @@ class MinHeap:
     self.heap_list = [None]
     self.count = 0
 
-  # HEAP HELPER METHODS
-  # DO NOT CHANGE!
   def parent_idx(self, idx):
     return idx // 2
 
@@ -17,8 +15,6 @@ class MinHeap:
   # NEW HELPER!
   def child_present(self, idx):
     return self.left_child_idx(idx) <= self.count
-
-  # END OF HEAP HELPER METHODS
   
   def retrieve_min(self):
     if self.count == 0:
